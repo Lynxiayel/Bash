@@ -35,9 +35,13 @@ PATH=${PATH}:$(find ~/Softwares -maxdepth 3 -name "*tools" -type d | tr '\n' ':'
 PATH=${PATH}:$(find ~/mygit -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
 test -s ~/.alias && . ~/.alias || true
 
+#general aliases
+alias clr="clear"
+
 #aliases for git 
 alias gcl="git clone"
 alias gaa="git add -A"
+alias gau="git add -u"
 alias gst="git status"
 alias gcm="git commit -m"
 alias gwc="git whatchanged"
