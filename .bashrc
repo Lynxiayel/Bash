@@ -27,6 +27,8 @@
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
+
+# patching the path
 PATH=${PATH}:$(find ~/Softwares -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
 PATH=${PATH}:$(find ~/Softwares -maxdepth 3 -name "bin" -type d | tr '\n' ':' | sed 's/:$//')
 PATH=${PATH}:$(find ~/Softwares -maxdepth 3 -name "*tools" -type d | tr '\n' ':' | sed 's/:$//')
@@ -39,4 +41,6 @@ alias gaa="git add -A"
 alias gst="git status"
 alias gcm="git commit -m"
 alias gwc="git whatchanged"
+alias gpl="git pull"
 alias gpom="git push origin master"
+
