@@ -24,6 +24,7 @@
 #
 #export PILOTPORT=/dev/pilot
 #export PILOTRATE=115200
+export PS1="\u@\h:\w>"
 export GTK_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
