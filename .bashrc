@@ -30,12 +30,12 @@ export XMODIFIERS="@im=fcitx"
 export QT_IM_MODULE=fcitx
 
 # patching the path
-if [ -d "~/Softwares" ]; then
+if [ -d ~/Softwares ]; then
     PATH=${PATH}:$(find ~/Softwares -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
     PATH=${PATH}:$(find ~/Softwares -maxdepth 3 -name "bin" -type d | tr '\n' ':' | sed 's/:$//')
     PATH=${PATH}:$(find ~/Softwares -maxdepth 3 -name "*tools" -type d | tr '\n' ':' | sed 's/:$//')
 fi
-if [ -d "~/mygit" ]; then
+if [ -d ~/mygit ]; then
     PATH=${PATH}:$(find ~/mygit -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
 fi
 test -s ~/.alias && . ~/.alias || true
