@@ -45,6 +45,7 @@ alias clr="clear"
 
 #aliases for git 
 alias gcl="git clone"
+alias gad="git add"
 alias gaa="git add -A"
 alias gau="git add -u"
 alias gst="git status"
@@ -52,4 +53,6 @@ alias gcm="git commit -m"
 alias gwc="git whatchanged"
 alias gpl="git pull"
 alias gpom="git push origin master"
+alias gdf="git diff"
+alias grm="git remove"
 
