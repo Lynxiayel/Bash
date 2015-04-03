@@ -54,5 +54,5 @@ alias gwc="git whatchanged"
 alias gpl="git pull"
 alias gpom="git push origin master"
 alias gdf="git diff"
-alias grm="git remove"
+alias grm="git rm"
 
