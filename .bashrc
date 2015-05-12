@@ -38,6 +38,9 @@ fi
 if [ -d ~/mygit ]; then
     PATH=${PATH}:$(find ~/mygit -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
 fi
+if [ -d /usr/local/go ]; then
+    PATH=$PATH:/usr/local/go/bin
+fi
 test -s ~/.alias && . ~/.alias || true
 
 #general aliases
