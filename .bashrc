@@ -38,9 +38,16 @@ fi
 if [ -d ~/mygit ]; then
     PATH=${PATH}:$(find ~/mygit -maxdepth 1 -type d | tr '\n' ':' | sed 's/:$//')
 fi
+
+#settings for golang
 if [ -d /usr/local/go ]; then
     PATH=$PATH:/usr/local/go/bin
 fi
+if [ -d ~/workspace/go ]; then
+    export GOPATH=~/workspace/go
+    PATH=$PATH:$GOPATH/bin
+fi
+
 test -s ~/.alias && . ~/.alias || true
 
 #general aliases
